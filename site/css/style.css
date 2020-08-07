@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: 0 auto;
+    width: 1500px;
+    height: 80px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    
+    
+}
+.logo{
+    width: 360px;
+    height: 80px;
+    margin-left: 10px;
+    
+}
+nav{
+    display: flex;
+    width: 1300px;
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;   
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    flex-grow: 1;
+    color: #505050;
+    padding: 40px;
+    
+}
+#whats{
+    width: 60px;
+    height: 60px; 
+}
+
+nav ul li a:hover{  
+    color: #27ff66;
+}
+
+nav ul ul{
+    
+    visibility: hidden;
+    position: absolute;
+}
+
+nav ul ul li{
+    float: none;
+    border-bottom: solid 1px #27ff66;
+}
+
+
+label[for="bt_menu"]{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    
+}
+
+#bt_menu{
+    display: none;
+}
+#botao-menu{
+    display: none;
+}
+
+@media(max-width: 1300px){
+    
+    header{
+        width: 800px;
+        height: 60px;
+        
+    }
+    .logo{
+        margin-left: 10px ;
+        width: 250px;
+        height: 60px;
+    }
+
+    nav ul li{
+        list-style: none;
+        display: inline;  
+        margin-left: 10px;
+        
+        
+    }
+    nav ul li a{
+        font-size: 25px;
+        padding: 20px;
+    }
+    #whats{
+        width: 40px;
+        height: 40px;
+       
+    }
+} 
+@media(max-width: 550px){
+    header{
+        width: 550px;
+        height: 310px;
+        background-color: #ee9797;
+        align-items: center; 
+        
+    }
+    .logo{
+        margin-left: 10px;
+        width: 800px;
+        height: 300px;
+    }
+    nav ul{
+        display: none;
+    }
+    .testebt{
+        width: 00%;
+        height: 60px;
+        background-color: #505050;
+        display: flex;
+        align-items: center;    
+        /* este ok */
+        justify-content: flex-end;
+        
+    }
+    #botao-menu{
+        display: block;
+        
+        
+        
+    }
+
+    
+} 
